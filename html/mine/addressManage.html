@@ -1,0 +1,45 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/jquery.mobile.css"/>
+    <link rel="stylesheet" href="../../css/my-custom-theme.css"/>
+    <link rel="stylesheet" href="../../css/jquery.mobile.icons.min.css"/>
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+
+<div data-role="page">
+    <div data-role="header">
+        <a data-role="button" data-rel="back" data-iconpos="notext" data-icon="carat-l"></a>
+        <h1>地址管理</h1>
+    </div>
+
+    <div data-role="content">
+        <ul data-role="listview">
+            <li>
+                <span>马云</span><span>15909034920</span>
+                <p>浙江省杭州市阿里巴巴总部行政楼1502</p>
+            </li>
+            <li>
+                <form action="" id="">
+                    <!--编辑，删除都需要图标支持，并且移动到右侧-->
+                    <input type="radio" name="defaultSite" id="defaultSite"><label for="defaultSite">设为默认地址<span>编辑</span><span>删除</span></label>
+                </form>
+            </li>
+        </ul>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <!--缺少一个加号-->
+        <a class="disinherit" href="newAddress.html" data-role="button">新建地址</a>
+    </div>
+</div>
+<!--/首页-->
+
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<script src="../../js/jquery.mobile.js"></script>
+</body>
+</html>

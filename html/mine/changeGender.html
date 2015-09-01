@@ -1,0 +1,40 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/jquery.mobile.css"/>
+    <link rel="stylesheet" href="../../css/my-custom-theme.css"/>
+    <link rel="stylesheet" href="../../css/jquery.mobile.icons.min.css"/>
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+
+<div data-role="page">
+    <div data-role="header">
+        <a data-role="button" data-rel="back" data-iconpos="notext" data-icon="carat-l"></a>
+        <h1>修改性别</h1>
+        <a href="personalData.html" data-role="button" data-iconpos="notext" data-icon="alert"></a><!--此处缺少一个确定按钮-->
+    </div>
+
+    <div data-role="content">
+        <form>
+            <fieldset data-role="controlgroup">
+                <input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" checked="checked" />
+                <label for="radio-choice-1">男</label>
+                <input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2" />
+                <label for="radio-choice-2">女</label>
+                <input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3" />
+                <label for="radio-choice-3">保密</label>
+            </fieldset>
+        </form>
+    </div>
+
+</div>
+<!--/首页-->
+
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<script src="../../js/jquery.mobile.js"></script>
+</body>
+</html>

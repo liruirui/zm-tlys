@@ -1,0 +1,101 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/jquery.mobile.css"/>
+    <link rel="stylesheet" href="../../css/my-custom-theme.css"/>
+    <link rel="stylesheet" href="../../css/jquery.mobile.icons.min.css"/>
+    <link rel="stylesheet" href="../../css/main.css">
+    <style>
+        p{
+            padding:0!important;
+            padding-bottom: 0.1em!important;
+            margin:0!important;
+        }
+    </style>
+</head>
+<body>
+<div data-role="page">
+    <div data-role="header">
+        <h1>专家</h1>
+        <a href="myDetails.html" data-role="button" data-icon="phone" data-iconpos="notext" class="icon_left"></a>
+    </div>
+
+
+    <div  class="top">
+        <form data-role="navbar" >
+            <ul>
+                <li><select name="">
+                    <option hidden>地区</option>
+                    <option>北京</option>
+                    <option>上海</option>
+                    <option>广州</option>
+                    <option>深圳</option>
+                </select></li>
+                <li><select name="">
+                    <option hidden>专家分类</option>
+                    <option>理疗师</option>
+                    <option>理疗师</option>
+                </select></li>
+                <li><select name="">
+                    <option hidden>排序</option>
+                    <option>职称</option>
+                    <option>价格</option>
+                </select></li>
+            </ul>
+        </form>
+    </div>
+
+
+    <div data-role="content" class="top">
+        <ul data-role="listview">
+            <li data-icon="false"><a href="expertDetails.html">
+                <img src="../../img/expert/man.png" class="listimg">
+
+                <h2>john 主任理疗师</h2>
+
+                <p>专业理疗汗蒸专家 北京海淀区</p>
+                <p>在线时间：周一~周五14：:00~18:00</p>
+                <p><img src="../../img/expert/five.png" /></p>
+                <!--<img  src="../../img/用户/专家/drawable-ldpi/five.png" width="100%" height="100%">-->
+                <p class="ui-li-aside"><a href="consultDetails.html" class="expertconsult">&nbsp;咨询&nbsp;</a></p>
+            </a></li>
+            <li data-icon="false"><a href="expertDetails.html">
+                <img src="../../img/expert/man.png" class="listimg">
+
+                <h2>john 主任理疗师</h2>
+
+                <p>专业理疗汗蒸专家 北京海淀区</p>
+                <p>在线时间：周一~周五14：:00~18:00</p>
+                <p><img src="../../img/expert/five.png" /></p>
+                <!--<img  src="../../img/用户/专家/drawable-ldpi/five.png" width="100%" height="100%">-->
+                <p class="ui-li-aside"><a href="consultDetails.html" class="expertconsult">咨询</a></p>
+            </a></li>
+        </ul>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="../../index.html" data-iconpos="bottom" data-icon="home">主页</a></li>
+                <li><a href="javascript:" data-iconpos="bottom" data-icon="expert">专家</a></li>
+                <li><a href="../shoppingCart/shoppingCart.html" data-iconpos="bottom" data-icon="shopping">购物车</a></li>
+                <li><a href="../mine/mine.html" data-iconpos="bottom" data-icon="my">我的</a></li>
+                <li><a href="../more/more.html" data-iconpos="bottom" data-icon="more">更多</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<script src="../../js/jquery.mobile.js"></script>
+<script>
+    $(function(){
+        $('#select-6-button,#select-7-button,#select-8-button').attr('class','selectwide ui-btn ui-icon-carat-d ui-btn-icon-right ui-corner-all ui-shadow');
+    });
+</script>
+</body>
+</html>

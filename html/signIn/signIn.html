@@ -1,0 +1,49 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/jquery.mobile.css"/>
+    <link rel="stylesheet" href="../../css/my-custom-theme.css"/>
+    <link rel="stylesheet" href="../../css/jquery.mobile.icons.min.css"/>
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+
+<div data-role="page">
+    <div data-role="header">
+        <a data-role="button" data-rel="back" data-iconpos="notext" data-icon="carat-l" class="icon_left" ></a>
+
+        <h1>登录</h1>
+    </div>
+
+    <div>
+        <!--用户图像占位，此后需要添加图片，且居中-->
+        <div class="user-headimg"><img src="../../img/expert/man.png" alt="用户图像" style="width:6em; "/></div>
+        <h3  class="center">用户头像</h3>
+        <form method="post" action="#">
+            <input type="tel" name="tel" id="tel" placeholder="手机号/账号">
+            <input type="text" name="tel-confirm" placeholder="密码"/>
+            <label class="bgcolor"><input type="radio" name="yes" id="yes"/>已阅读同意《服务协议》</label>
+            <a href="../../index.html" class="signbtn" >登&nbsp;&nbsp;&nbsp;录</a>
+            <!--此处需要居中-->
+            <a href="../userRegister/userRegister.html"  class="mid">没有账号？点此注册</a>
+        </form>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" data-iconpos=bottom data-icon="plus">微信登陆</a></li>
+                <li><a href="#" data-iconpos="bottom" data-icon="plus">QQ登陆</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--/首页-->
+
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<script src="../../js/jquery.mobile.js"></script>
+</body>
+</html>

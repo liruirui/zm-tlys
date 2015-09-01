@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/jquery.mobile.css"/>
+    <link rel="stylesheet" href="../../css/my-custom-theme.css"/>
+    <link rel="stylesheet" href="../../css/jquery.mobile.icons.min.css"/>
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+
+<div data-role="page">
+    <div data-role="header">
+        <a data-role="button" data-rel="back" data-iconpos="notext" data-icon="carat-l"></a>
+        <h1>个人资料</h1>
+        <a href="verifyMessage.html" data-role="button" data-rel="back" data-iconpos="notext" data-icon="forward"></a>
+    </div>
+
+        <form data-role="content" method="post" action="" id="chooseGender">
+            <fieldset data-role="controlgroup">
+                <legend>请选择您的性别</legend>
+                <label for="male">男</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="female">女</label>
+                <input type="radio" name="gender" id="female" value="female">
+            </fieldset>
+            <input type="text" name="nick" placeholder="请输入长度为2-20的昵称"/>
+            <a href="verifyMessage.html" data-role="button">下一步</a>
+        </form>
+
+</div>
+<!--/首页-->
+
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<script src="../../js/jquery.mobile.js"></script>
+</body>
+</html>

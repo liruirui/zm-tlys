@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/jquery.mobile.css"/>
+    <link rel="stylesheet" href="../../css/my-custom-theme.css"/>
+    <link rel="stylesheet" href="../../css/jquery.mobile.icons.min.css"/>
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+
+<div data-role="page">
+    <div data-role="header">
+        <a data-role="button" data-rel="back" data-iconpos="notext" data-icon="carat-l"></a>
+
+        <h1>发表评论</h1>
+    </div>
+
+    <div data-role="content">
+        <ul data-role="listview">
+            <li data-icon="false"><a href="">
+                <img src="" alt="图片说明文字">
+
+                <p>有机西红柿，回归大自然的感觉，体验小时候的味道</p>
+
+                <p>5000份</p>
+            </a></li>
+            <li data-role="list-divider"></li>
+            <li data-icon="false"><a href="">
+                <p>评论：</p>
+                <img class="ui-li-icon" src="" alt="图***">
+            </a></li>
+            <li>
+                <p>长度在10-500字之间</p>
+
+                <p>写下购买体会或使用过程中带来的帮助等，可以为其他小伙伴提供参考~</p>
+            </li>
+        </ul>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <a class="disinherit" href="#popupYes" data-role="button" data-rel="popup">提交</a>
+    </div>
+    <!--弹出框-->
+    <div data-role="popup" id="popupYes" class="ui-corner" data-overlay-theme="b">
+        <p>评价成功</p>
+        <a href="queryOrder.html" data-rel="back" data-role="button">确定</a> <!--有问题：弹出位置以及链接-->
+    </div>
+</div>
+<!--/首页-->
+
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<script src="../../js/jquery.mobile.js"></script>
+</body>
+</html>

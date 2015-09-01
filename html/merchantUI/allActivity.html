@@ -1,0 +1,43 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/jquery.mobile.css"/>
+    <link rel="stylesheet" href="../../css/my-custom-theme.css"/>
+    <link rel="stylesheet" href="../../css/jquery.mobile.icons.min.css"/>
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+
+<div data-role="page">
+    <div data-role="header">
+        <a data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"></a>
+        <h1>所有活动</h1>
+        <!--少一个编辑菜单-->
+    </div>
+
+    <div data-role="content">
+        <ul data-role="listview">
+            <!--此处需要动态遍历-->
+            <li data-icon="false">
+                <a href="activityManage.html">
+                    <img src="fk.png">
+                    <h2>中医养生，三个月阶段，送你健康身体</h2>
+                    <p><span>2015-05-08</span><span>￥880</span></p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div data-role="footer">
+        <button>删除</button>
+    </div>
+</div>
+<!--/首页-->
+
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<script src="../../js/jquery.mobile.js"></script>
+</body>
+</html>

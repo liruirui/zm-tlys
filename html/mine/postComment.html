@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/jquery.mobile.css"/>
+    <link rel="stylesheet" href="../../css/my-custom-theme.css"/>
+    <link rel="stylesheet" href="../../css/jquery.mobile.icons.min.css"/>
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+
+<div data-role="page">
+    <div data-role="header">
+        <a data-role="button" data-rel="back" data-iconpos="notext" data-icon="carat-l"></a>
+        <h1>发表评论</h1>
+    </div>
+
+    <div data-role="content">
+        <ul data-role="listview" data-inset="true">
+            <li>
+                <a href="#">
+                    <img src="../../img/mine/strawberry1.png">
+                    <h2>商品参数</h2>
+                    <p>商品简介</p>
+                </a>
+            </li>
+            <li>
+                <form action="" method="post" id="comment">
+                    <div class="comment">
+                        <p>评论</p>
+                        <p>星级（需要填充图片）</p>
+                    </div>
+                    <textarea name="comment" id="commentArea" cols="30" rows="10" placeholder="长度在10-500字之间写下购买体会或使用过程中带来的帮助等，可以为其他小伙伴提供参考~
+"></textarea>
+                </form>
+            </li>
+        </ul>
+    </div>
+
+    <div data-role="footer">
+        <button form="comment">提交</button>
+    </div>
+</div>
+<!--/首页-->
+
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<script src="../../js/jquery.mobile.js"></script>
+</body>
+</html>

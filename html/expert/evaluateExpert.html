@@ -1,0 +1,56 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/jquery.mobile.css"/>
+    <link rel="stylesheet" href="../../css/my-custom-theme.css"/>
+    <link rel="stylesheet" href="../../css/jquery.mobile.icons.min.css"/>
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+
+<div data-role="page">
+    <div data-role="header">
+        <a href="" data-rel="back" data-icon="carat-l" data-iconpos="notext" class="icon_left"></a>
+
+        <h1>评价</h1>
+    </div>
+
+    <div data-role="content">
+        <ul data-role="listview">
+            <li data-icon="false"><a href="expertDetails.html">
+                <img src="../../img/expert/man.png" width="100%" height="100%">
+
+                <h2>john 主任理疗师</h2>
+
+                <p>专业理疗汗蒸专家xx疗院</p>
+
+                <!--打分动态效果暂时没做-->
+                <p><img src="../../img/expert/five.png" class="ui-li-icon" alt=""/></p>
+            </a></li>
+            <li style="min-height:14em;">
+                <p><img src="../../img/expert/five.png" class="ui-li-icon" alt=""/></p>
+                <form>
+                    <textarea style="border: none;resize: none;box-shadow: none;height: 10em;" class="background" placeholder="请输入您的评价！"></textarea>
+                </form>
+            </li>
+        </ul>
+    </div>
+
+    <div data-role="footer" data-position="fixed" class="trans">
+        <a href="#popupComments" data-rel="popup" class="disinherit">提交</a>
+    </div>
+
+    <div data-role="popup" id="popupComments" class="ui-corner-all" data-overlay-theme="b">
+            <p>您的咨询已提交，专家看到后会尽快回复，谢谢！</p>
+            <a href="expertCommentDetails.html" data-rel="back" data-role="button" class="disinherit">确定</a>
+        </div>
+</div>
+<!--/首页-->
+
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<script src="../../js/jquery.mobile.js"></script>
+</body>
+</html>

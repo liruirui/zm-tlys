@@ -1,0 +1,56 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/jquery.mobile.css"/>
+    <link rel="stylesheet" href="../../css/my-custom-theme.css"/>
+    <link rel="stylesheet" href="../../css/jquery.mobile.icons.min.css"/>
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+
+<div data-role="page" id="setUp">
+    <div data-role="header">
+        <a href="" data-rel="back" data-icon="carat-l" data-iconpos="notext"></a>
+
+        <h1>设置</h1>
+    </div>
+
+    <div data-role="content" class="setting-content">
+        <ul data-role="listview">
+            <li data-icon="false">
+                <select data-role="slider">
+                    <option value="off"></option>
+                    <option value="on"></option>
+                </select>
+                <span>新消息通知</span>
+            </li>
+            <li data-icon="false">
+                <select data-role="slider">
+                    <option value="off"></option>
+                    <option value="on"></option>
+                </select>
+                <span>声音</span>
+            </li>
+            <li data-icon="false">
+                <select data-role="slider">
+                    <option value="off"></option>
+                    <option value="on"></option>
+                </select>
+                <span>震动</span>
+            </li>
+        </ul>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <a data-role="button" class="disinherit">清空消息列表</a>
+    </div>
+</div>
+<!--/首页-->
+
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<script src="../../js/jquery.mobile.js"></script>
+</body>
+</html>
