@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" ng-app = "signIn">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +14,6 @@
 <div data-role="page">
     <div data-role="header">
         <a data-role="button" data-rel="back" data-iconpos="notext" data-icon="carat-l" class="icon_left" ></a>
-
         <h1>登录</h1>
     </div>
 
@@ -22,11 +21,11 @@
         <!--用户图像占位，此后需要添加图片，且居中-->
         <div class="user-headimg"><img src="../../img/expert/man.png" alt="用户图像" style="width:6em; "/></div>
         <h3  class="center">用户头像</h3>
-        <form method="post" action="#">
-            <input type="tel" name="tel" id="tel" placeholder="手机号/账号">
-            <input type="text" name="tel-confirm" placeholder="密码"/>
-            <label class="bgcolor"><input type="radio" name="yes" id="yes"/>已阅读同意《服务协议》</label>
-            <a href="../../index.html" class="signbtn" >登&nbsp;&nbsp;&nbsp;录</a>
+        <form method="post" action="#" ng-controller="signInController">
+            <input type="tel" id="tel" placeholder="手机号/账号" ng-model="userTel">
+            <input type="text"id="telConfirm" placeholder="密码" ng-model="pwd"/>
+            <label class="bgcolor"><input type="radio" id='yes' name="yes"/>已阅读同意《服务协议》</label>
+            <button type="button"  class="signbtn" ng-click="sendMsg()">登&nbsp;&nbsp;&nbsp;录</button>
             <!--此处需要居中-->
             <a href="../userRegister/userRegister.html"  class="mid">没有账号？点此注册</a>
         </form>
@@ -45,5 +44,7 @@
 
 <script src="../../js/jquery-1.11.3.min.js"></script>
 <script src="../../js/jquery.mobile.js"></script>
+<script src="../../js/angular.js"></script>
+<script src="../../js/signIn/signInController.js"></script>
 </body>
 </html>

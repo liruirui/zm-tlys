@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" ng-app="userReg">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,11 +18,14 @@
     </div>
 
     <div data-role="content">
-        <form method="post" action="#">
-            <input type="tel" name="tel" id="tel" placeholder="姓名...">
-            <input type="text" name="tel-confirm" placeholder="输入手机验证码..."/>
-            <label><input type="radio" name="yes" id="yes"/>已阅读同意《服务协议》</label>
-            <a href="setPassword.html" data-role="button">下一步</a>
+        <form method="post" action="#" ng-controller="userRegController">
+            <input type="tel" id="username" ng-model="mobile" placeholder="手机号...">
+            <input type="text" id="verify_code" ng-model="verify_code" placeholder="输入手机验证码..."/>
+            <label><input type="radio"  id="status"/>已阅读同意《服务协议》</label>
+            <!--<a href="setPassword.html" data-role="button">下一步</a>-->
+            <button type="button" ng-click="getVerifyCode()">获取验证码</button>
+            <!--输入登录密码，并且确认登陆密码-->
+            <button type="button" ng-click="test_isVerifyCodeCorrect()">下一步</button>
         </form>
     </div>
 
@@ -39,5 +42,7 @@
 
 <script src="../../js/jquery-1.11.3.min.js"></script>
 <script src="../../js/jquery.mobile.js"></script>
+<script src="../../js/angular.js"></script>
+<script src="../../js/userRegister/userRegisterController.js"></script>
 </body>
 </html>
