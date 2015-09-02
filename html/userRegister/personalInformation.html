@@ -2,7 +2,7 @@
 上传图像界面没有做
 -->
 <!doctype html>
-<html class="no-js" ng-app="personalInfo">
+<html class="no-js" ng-app="personInfo">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,16 +21,17 @@
         <a href="verifyMessage.html" data-role="button" data-rel="back" data-iconpos="notext" data-icon="forward"></a>
     </div>
 
-        <form data-role="content" method="post" action="" id="chooseGender">
+        <form data-role="content" method="post" ng-controller="personInfoController">
             <fieldset data-role="controlgroup">
                 <legend>请选择您的性别</legend>
                 <label for="male">男</label>
-                <input type="radio" name="gender" id="male" value="male">
+                <input type="radio" name="gender" id="male" value="male" ng-model="personInfoSexM">
                 <label for="female">女</label>
                 <input type="radio" name="gender" id="female" value="female">
             </fieldset>
             <input type="text" name="nick" placeholder="请输入长度为2-20的昵称"/>
-            <a href="verifyMessage.html" data-role="button">下一步</a>
+            <!--<a href="verifyMessage.html" data-role="button">下一步</a>-->
+            <button type="button" ng-click="personInfoFinish()">下一步</button>
         </form>
 
 </div>
@@ -38,5 +39,7 @@
 
 <script src="../../js/jquery-1.11.3.min.js"></script>
 <script src="../../js/jquery.mobile.js"></script>
+<script src="../../js/angular.js"></script>
+<script src="../../js/userRegister/personalInfoController.js"></script>
 </body>
 </html>

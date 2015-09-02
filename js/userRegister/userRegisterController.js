@@ -5,7 +5,6 @@ userRegModule.controller("userRegController", function ($scope, $http) {
     $scope.status = $('#status').val()
 
 
-
     var userData = {
         'mobile':$scope.mobile,
         'verify_code': $scope.verify_code,
@@ -22,32 +21,37 @@ userRegModule.controller("userRegController", function ($scope, $http) {
             data: userData,
             timeout: 5000,
             success: function () {
-                alert('successful')
+                alert('获取验证码成功')
             },
             error: function(){
-                alert("error")
+                alert("获取验证码失败")
             }
         })
     }
+
     $scope.test_isVerifyCodeCorrect = function(){
         var url = "mobile: "+$scope.mobile+"verify_code: "+$scope.verify_code+"status: "+1
         $.ajax({
             async:false,
-            url: "http://t10.beauityworld.com/YSUserAPI/register_one?mobile="+$scope.mobile+"?verify_code="+$scope.verify_code+"?status="+1,
-            type:"POST",
+            url: "http://t10.beauityworld.com/YSUserAPI/register_one",
+            //data:{"mobile":$scope.mobile,"verify_code":$scope.verify_code,"status":1},
+            data: userData,
+            type:"GET",
             dataType:'jsonp',
             jsonp:'jsoncallback',
             timeout:5000,
             success:function(data){
-                var flag = data.code
-                if(flag===1){
+                var json = eval(data);
+                var flag = json.code
+                if(flag==1){
+                    //这种写法很恶心,后续改之
                     document.location.href = "setPassword.html"
                 }else{
-                    console.log('data.code = 0 ::: 验证错误')
+                    alert('验证错误,请重新输入')
                 }
             },
             error:function(){
-                console.log("something happen")
+                console.log("数据请求失败")
             }
         })
     }
